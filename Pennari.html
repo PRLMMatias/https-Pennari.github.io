@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animoitu Teksti</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: pink; /* Taustaväri */
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Gay_Pride_Flag.svg/1200px-Gay_Pride_Flag.svg.png');
+            background-size: cover;
+            background-blend-mode: multiply; /* Sekoittaa kuvan ja värin */
+        }
+
+        .animated-text {
+            font-size: 3rem;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            animation: fadeIn 3s ease-in-out infinite alternate;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(-20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="animated-text">
+        LIROHITO! Please Show PENNARI!!!
+    </div>
+</body>
+</html>
+
